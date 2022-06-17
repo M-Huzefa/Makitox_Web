@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&family=Macondo&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-size: 62.5%;     
+}
+
+body{
+    font-family: 'Akshar', sans-serif;
+    font-family: 'Macondo', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ############## utility classes ##################### */
+
+.white{color: #defdef;}
+.grey{ color: rgb(155, 150, 150);}
+
+.lg-heading{ font-size: 5rem; font-weight: 800;}
+.md-heading{ font-size: 3.2rem; font-weight: 600;}
+.sl-heading{ font-size: 2.5rem; font-weight: 400;}
+.xsl-heading{ font-size: 2rem; font-weight: 400;}
+.p-size{font-size: 1.5rem; font-weight: 300;}
+
+.link:hover{ color: #ffca3a; border-bottom: .1em solid #ffca3a;}
+.link{ text-decoration: none; color: #efef; font-size: 2rem; font-weight: 400; margin: .2em .5em;}
+
+.HG::selection{ color: #1c1c1d; background-color: #ffca3a; text-shadow: .04em .04em darkseagreen;}
+.pad{ padding: 1em;}
+.space{ line-height: 2em;}
+
+.container{
+    max-width: 115rem;
+    width: 95%;
+    margin: auto;
+}
+
+.btn1{
+    background-color: #8ac926;
+    border-radius: 1rem;
+    color: #defdef;
+    display: inline-block;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
+.btn1:hover{background-color: #536e27;}
+
+.btn2{
+    background-color: #ffca3a;
+    border-radius: 3rem;
+    color: #defdef;
+    display: inline-block;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
+.btn2:hover{background-color: #ad903e;}
+
+.demo1{border: 5px solid red;}
+.demo2{border: 3px solid green;}
+
+/* ########################## NavBar CSS ################### */
+
+.navbar{
+    background: #6c757d;
+    height: 20vh;   
+}
+
+.navbar .container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ##################### header CSS ##################### */
+
+.header{
+    position: relative;
+    background: url(../Images/herder.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4rem;
+    text-align: center;
+}
+
+/* ######################## section services,Testimonial, Out-team, Contact-Us CSS ################### */
+
+#services, #Testimonial, #Our-Team, #Contact-Us{
+    background-color: #3b3f42;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;   
+    text-align: center; 
+}
+
+#services h3::after, #Testimonial h3::after, #Our-Team h3::after, #Contact-Us h3::after{
+    content: "";
+    display: block;
+    margin: 3rem 0 0 20%;
+    border-bottom: 0.17em solid #ffca3a;
+    width: 60%;
+    border-radius: 10rem;
+}
+
+
+
+/* ######################## services & team CSS ################### */
+
+.services, .team{
+    background-color: #1c1c1d;
+}
+
+.services .container, .team .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 7rem 0;
+}
+
+.services .box, .team .box{
+    width: 25%;
+    min-width: 28rem;
+    padding: 10em;
+    text-align: center;
+}
+
+.services img, .team img{
+    width: 100%;
+}
+
+/* ########################## section video CSS ##################### */
+
+.video{
+    background-color: #1c1c1d;
+}
+
+.video .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+video{
+    width: 100%;
+    padding: 5rem 0;
+}
+
+.video a{
+    margin-bottom: 5rem;
+}
+
+/* ################### packages CSS ################# */
+
+.packages{
+    background-color: #3b3f42;
+}
+
+.packages .head{
+    text-align: center;
+    padding: 3rem;
+}
+
+.packages .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 5rem;
+}
+
+.p-box{
+    width: 55rem;
+    min-width: 27rem;
+    margin: 1rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 3rem;
+}
+
+/* ############################### about us CSS ######################  */
+
+.about-us{
+    background-color: #1c1c1d;
+}
+.about-us .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.about-us .img, .about-us .aboutus{
+    width: 55rem;
+    min-width: 28rem;
+    text-align: justify;
+    padding: 2rem;
+}
+
+.about-us img{
+    width: 100%;
+}
+
+.about-us .aboutus h3, .about-us .aboutus p{
+    padding: 3rem;
+    line-height: 1.8em;
+} 
+
+.about-us .aboutus h3::after{
+    content: "";
+    display: block;
+    margin: 1rem 0 0 0;
+    border-bottom: 0.17em solid grey;
+    width: 4em;
+    border-radius: 10rem;
+}
+
+/* ########################## contact us CSS ################## */
+
+.contact-us{
+    background-color: #1c1c1d;
+    padding: 5rem 0;
+}
+
+.contact-us .contact-form{
+    padding: 5rem;
+    max-width: 90rem;
+    width: 90%;
+    margin: auto;
+    background-color: whitesmoke;
+    border-radius: 5rem;
+}
+
+.contact-form .heading{
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.contact-form .name-info .name{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4rem;
+}
+
+.contact-form .name-info .name .box{
+    width: 50%;
+}
+
+.contact-form .name-info .name .box input{
+    width: 95%;
+}
+
+.contact-form .radio label{
+    padding: 1rem;
+}
+
+.contact-form label{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.contact-form input{
+    font-size: 2.5rem;
+    border: none;
+}
+
+.contact-form textarea{
+    font-size: 1rem;
+    border: none;
+}
+
+.contact-form .email input, .contact-form .email textarea, .contact-form .email label{
+    display: block;
+    width: 100%;
+}
+
+.form input:focus, .form input:hover, .contact-form textarea:focus, .contact-form textarea:hover{
+    padding: 0.4em;
+    border: none;
+}
+
+.contact-form .submit{
+    display: flex;
+    justify-content: center;
+}
+.contact-form .btn{
+    font-size: 1.5rem;
+    background-color: #ffca3a;
+    border-radius: 3rem;
+    color: #defdef;
+    display: inline-block;
+    padding: 1em 4em;
+    text-decoration: none;
+}
+
+.contact-form .btn:hover{background-color: #ad903e;}
+
+/* ##################### social links CSS ################## */
+
+.social-link{
+    background-color: #ffca3a;
+    padding: 3rem;
+}
+
+.social-links{
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;   
+    text-align: center; 
+}
+
+.social-links h3::after{
+    content: "";
+    display: block;
+    margin: 1.5rem 0 0 20%;
+    border-bottom: 0.17em solid grey;
+    width: 60%;
+    border-radius: 10rem;
+}
+
+.social-links .s-links{
+    text-decoration: none;
+    color: darkblue;
+    padding: 0.5rem;
+    font-size: 3rem;
+}
+
+/* ################### footer #################### */
+
+.footer{
+    background-color: #3b3f42;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;   
+    text-align: center; 
+}
